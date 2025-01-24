@@ -1,0 +1,6 @@
+.background-styles {
+  background-color: aliceblue;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 1rem;
+}

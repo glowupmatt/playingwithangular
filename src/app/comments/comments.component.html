@@ -1,0 +1,22 @@
+<p>comments works!</p>
+
+<div *ngIf="isCommentsEmpty">
+  <p>No comments available.</p>
+</div>
+
+<ng-container *ngFor="let comment of comments">
+  <div>
+    <h3>{{ comment.content }}</h3>
+  </div>
+</ng-container>
+
+
+  <div class="user-profile-display-container">
+    <h3>{{ currentUser.username }}</h3>
+    <img [src]="currentUser?.image?.png" alt="avatar" />
+  </div>
+
+
+
+<button (click)="logComments()">Log Comments</button>
+

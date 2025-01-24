@@ -1,0 +1,9 @@
+<section class="comment-section-container">
+  <!-- <app-comments/> -->
+   <ng-container *ngIf="currentUser">
+    <app-user-card 
+    [profileImage]="currentUser?.image?.png" 
+    [userName]="currentUser?.username"
+    />
+  </ng-container>
+</section>
